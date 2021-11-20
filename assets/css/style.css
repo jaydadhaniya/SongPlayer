@@ -1,0 +1,26 @@
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand {
+    color: rgb(255, 0, 85) !important;
+}
+
+.active {
+    background-color: rgb(255, 0, 85) !important;
+}
+
+a:hover {
+    background-color: rgba(0, 139, 139, 0.644) !important;
+    color: black !important;
+}
+
+#song-container>.bg-light {
+    background-color: rgba(0, 139, 139, 0.644) !important;
+}
+
+.progress-bar {
+    background-color: rgb(255, 0, 85) !important;
+}

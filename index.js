@@ -57,12 +57,14 @@ playIcon.addEventListener('click', () => {
     if (!isPlaying) {
         pauseSong();
     } else {
-        playSong();
+        playSong(false);
     }
 });
 
-function playSong() {
-    initSong();
+function playSong(setUpDetails = true) {
+    if (setUpDetails) {
+        initSong();
+    }
     playIcon.querySelector('i.bi').classList.remove('bi-play-circle-fill');
     playIcon.querySelector('i.bi').classList.add('bi-pause-circle-fill');
     audio.play();
